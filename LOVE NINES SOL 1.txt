@@ -1,0 +1,12 @@
+n=int(input())
+for _ in range (n):
+    x=int(input())
+    if(x<9):
+        print(-1)
+    else:
+        p=x%10
+        l=10-p
+        if(x-(l*9)>=0):
+            print(l)
+        else:
+            print(-1)
